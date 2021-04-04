@@ -1,0 +1,70 @@
+﻿TOPIC
+    about_Mdbc
+
+SHORT DESCRIPTION
+    MongoDB cmdlets based on the official C# driver.
+
+LONG DESCRIPTION
+    The module provides the following cmdlets for various tasks:
+
+    Connect, set the default client, database, and collection:
+
+        Connect-Mdbc
+
+    Operate on documents, use transactions:
+
+        Add-MdbcData
+        Get-MdbcData
+        Set-MdbcData
+        Remove-MdbcData
+        Update-MdbcData
+        Use-MdbcTransaction
+
+    Create PowerShell friendly documents for other cmdlets:
+
+        New-MdbcData
+
+    Invoke MongoDB commands including not covered by module:
+
+        Invoke-MdbcCommand
+
+    Invoke complex aggregate queries:
+
+        Invoke-MdbcAggregate
+
+    Manage databases and collections:
+
+        Get-MdbcDatabase
+        Add-MdbcCollection
+        Get-MdbcCollection
+        Remove-MdbcDatabase
+        Remove-MdbcCollection
+        Rename-MdbcCollection
+
+    Manage bson/json data without MongoDB:
+
+        Export-MdbcData
+        Import-MdbcData
+
+HOW TO
+    Add document
+        Add-MdbcData -- adds strictly new, returns none
+        Set-MdbcData -Add -- replaces old or adds new, returns none or info
+        Get-MdbcData -Set -Add -- replaces old or adds new, returns old or new
+        + Update-MdbcData -Add -- updates old or adds new, returns none or info
+
+    Set document
+        Set-MdbcData -- replaces old, returns none or info
+        Get-MdbcData -Set -- replaces old, returns old or new
+        + Update-MdbcData -- updates old, returns none or info
+
+    Remove document(s)
+        Remove-MdbcData -- removes one or many old, returns none or info
+        Get-MdbcData -Remove -- removes old, returns old
+
+    Update document(s)
+        Update-MdbcData -- updates one or many old or adds one new, returns none or info
+
+SEE ALSO
+    MongoDB http://www.mongodb.org
+    C# driver https://github.com/mongodb/mongo-csharp-driver
