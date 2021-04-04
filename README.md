@@ -14,7 +14,7 @@ Get-Module Mdbc
 
 #step3 升级.Net版本为4.8；此步骤耗时很长，不要心急。
 #手动双击文件 【ndp48-x86-x64-allos-enu.exe】，并进行安装
-https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe
+#.Net升级包下载地址：https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe
 
 #step4 安装完成，重启系统
 
